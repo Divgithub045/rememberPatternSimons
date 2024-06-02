@@ -3,6 +3,17 @@ var buttonColors = ["red", "green", "yellow", "blue"];
 var userClickedPattern =[];
 var level=0;
 var started = false;
+$("#start-button").click(function() {
+  $("#start-button").fadeOut(100).fadeIn(100);
+  setTimeout(function(){
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+    $("#start-button").text("");;
+  }},1000);
+  
+});
 $(document).keypress(function() {
     if (!started) {
       $("#level-title").text("Level " + level);
@@ -21,6 +32,7 @@ function playSound(name)
     var audio = new Audio("sounds/" + name + ".mp3");
     audio.play(); 
 }
+
 $(".btn").on('click', function()
 {
     var userChosenColour = $(this).attr("id");
