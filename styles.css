@@ -16,6 +16,31 @@ body {
 
 
 }
+.hidden
+{
+  width:0;
+  height:0;
+}
+p
+{
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  color: cadetblue;
+  background-color: #FEF2BF;
+  font-weight: 900;
+}
+#start-button
+{
+  width:150px;
+  height:50px;
+  background-color: bisque;
+  color:#011F3F;
+  border:1px,solid,#FEF2BF;
+  margin:auto;
+  border-radius: 20%;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 .btn {
   margin:5px;
@@ -51,3 +76,4 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
